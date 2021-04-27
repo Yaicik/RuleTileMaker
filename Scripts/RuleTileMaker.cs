@@ -89,7 +89,7 @@ public class RuleTileMaker : EditorWindow
         CraeateRuleTile();
 
         byte[] bytes = endTexture.EncodeToPNG();
-        File.WriteAllBytes(Application.dataPath + "/" + Results + "/" + beginTexture.name + "/Image.png", bytes);
+        File.WriteAllBytes("Assets/" + Results + "/" + beginTexture.name + "/Image.png", bytes);
     }
 
     #region Folders
